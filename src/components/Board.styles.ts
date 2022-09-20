@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 export const Square = styled.div`
 	background-color: yellow;
@@ -12,10 +12,14 @@ export const BoardRow = styled(Row)`
 	align-items: center;
 `
 
+export const BoardCol = styled(Col)`
+	--bs-gutter-x: 0.5rem;
+	--bs-gutter-x: 0.5rem;
+`
+
 export const BoardContainer = styled(Container)`
 	max-width: 500px;
 	min-width: 250px;
 	aspect-ratio: 1 / 1;
 	background-color: blue;
-	--bs-gutter-x: 0.5rem;
 `
