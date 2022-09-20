@@ -1,21 +1,48 @@
-import * as React from 'react'
-import { Grid2 } as Grid from '@mui/material/Unstable_Grid2'
+import { Col, Container, Row } from 'react-bootstrap'
+import * as Styled from './Board.styles'
+
+const Square = () => {
+	return <Styled.Square>x</Styled.Square>
+}
 
 const Board = () => {
-    return (
-        <Grid container spacing={2}>
-            <Grid xs={8}>
-                <Item>xs=8</Item>
-            </Grid>
-            <Grid xs={4}>
-                <Item>xs=4</Item>
-            </Grid>
-            <Grid xs={4}>
-                <Item>xs=4</Item>
-            </Grid>
-            <Grid xs={8}>
-                <Item>xs=8</Item>
-            </Grid>
-        </Grid>
-    )
+	return (
+		<Container>
+			<Row>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+			</Row>
+		</Container>
+	)
 }
+
+export default Board
