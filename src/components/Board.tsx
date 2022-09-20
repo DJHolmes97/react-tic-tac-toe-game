@@ -1,4 +1,4 @@
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import * as Styled from './Board.styles'
 
 const Square = () => {
@@ -7,8 +7,8 @@ const Square = () => {
 
 const Board = () => {
 	return (
-		<Container>
-			<Row>
+		<Styled.BoardContainer>
+			<Styled.BoardRow>
 				<Col xs={4}>
 					<Square />
 				</Col>
@@ -18,8 +18,8 @@ const Board = () => {
 				<Col xs={4}>
 					<Square />
 				</Col>
-			</Row>
-			<Row>
+			</Styled.BoardRow>
+			<Styled.BoardRow>
 				<Col xs={4}>
 					<Square />
 				</Col>
@@ -29,8 +29,8 @@ const Board = () => {
 				<Col xs={4}>
 					<Square />
 				</Col>
-			</Row>
-			<Row>
+			</Styled.BoardRow>
+			<Styled.BoardRow>
 				<Col xs={4}>
 					<Square />
 				</Col>
@@ -40,8 +40,8 @@ const Board = () => {
 				<Col xs={4}>
 					<Square />
 				</Col>
-			</Row>
-		</Container>
+			</Styled.BoardRow>
+		</Styled.BoardContainer>
 	)
 }
 
