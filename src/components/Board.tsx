@@ -1,49 +1,47 @@
-import * as React from 'react'
-import Grid from '@mui/material/Grid'
-import { styled } from '@mui/material/styles'
-import { Paper } from '@mui/material'
+import { Col, Container, Row } from 'react-bootstrap'
+import * as Styled from './Board.styles'
 
-const Item = styled(Paper)(({ theme }) => ({
-	backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-	...theme.typography.body2,
-	padding: theme.spacing(1),
-	textAlign: 'center',
-	color: theme.palette.text.secondary,
-	height: '100px',
-	maxWidth: '100px',
-}))
+const Square = () => {
+	return <Styled.Square>x</Styled.Square>
+}
 
 const Board = () => {
 	return (
-		<Grid container columns={3}>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-			<Grid xs={1}>
-				<Item>X</Item>
-			</Grid>
-		</Grid>
+		<Container>
+			<Row>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+				<Col xs={4}>
+					<Square />
+				</Col>
+			</Row>
+		</Container>
 	)
 }
 
