@@ -1,7 +1,12 @@
 import * as Styled from './Board.styles'
+import { Circle } from 'react-feather'
 
 const Square = () => {
-	return <Styled.Square>x</Styled.Square>
+	return (
+		<Styled.Square>
+			<Circle size={56} color={'#643A71'} />
+		</Styled.Square>
+	)
 }
 
 const Board = () => {
