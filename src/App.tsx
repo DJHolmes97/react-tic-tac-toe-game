@@ -6,11 +6,11 @@ export default function App() {
 	return (
 		<div className="App">
 			<Container>
-				<Row>
+				<Row className="mb-5">
 					<Col xs={2} />
 					<Col xs={8}>
-						<h1>Hello CodeSandbox</h1>
-						<h2>This is a Tic Tac Toe example game</h2>
+						<h1>Tic Tac Toe Game</h1>
+						<h2>It is player ones turn.</h2>
 					</Col>
 					<Col xs={2} />
 				</Row>
